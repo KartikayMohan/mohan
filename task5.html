@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+    <style>
+        h3{
+            color: blue;
+            letter-spacing: 0.5px;
+        }
+        input[type="text"],input[type="number"],input[type="password"]{
+            width: 98.5%;
+        }
+        .r1{
+            text-align: center;
+        }
+        .radio-option{
+            text-align: left;
+        }
+        .redirect{
+            text-align: end;
+        }
+        tr:nth-child(10){
+            height: 20px;
+        }
+        .add{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;">Registration Form</h3>
+    <form>
+        <table border="1" cellspacing="0" align="center" style="width: 600px;">
+            <tr>
+                <td class="r1"><label for="fn"><b>First Name</b></label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="ln"><b>Last Name</b></label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="email"><b>Email</b></label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="pass"><b>Password</b></label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="repass"><b>Re-enter Password</b></label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="r1"><Label for="gen"><b>Gender</b></Label></td>
+                <td class="radio-option">
+                    <input type="radio" name="gen">
+                    <label for="gen"> Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="radio-option">
+                    <input type="radio" name="gen">
+                    <label for="gen">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="age"><b>Age</b></label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="p_no"><b>Phone Number</b></label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="r1"><label for="add"><b>Address</b></label></td>
+                <td rowspan="3"><input class="add" type="text"></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td class="r1"><label for="st"><b>State</b></label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="con"><b>Country</b></label></td>
+                <td>
+                    <select name="con">
+                        <option value="choose">Choose your country</option>
+                        <option value="in">India</option>
+                        <option value="us">USA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="r1"><label for="lang"><b>Languages known</b></label></td>
+                <td>
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Kannada
+                    <input type="checkbox"> Hindi
+                    <input type="checkbox"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td class="radio-option" colspan="2"><input type="checkbox" checked> Hereby I declare all the given details are true</td>
+            </tr>
+            <tr>
+                <td class="redirect" colspan="2">Login to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website</td>
+            </tr>
+        </table>
+        <div style="text-align: center; padding: 15px;">
+            <input type="submit" value="Register" name="Register">
+        </div>
+    </form>
+</body>
+</html>

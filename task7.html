@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7</title>
+    <style>
+        .first{
+            width: 300px;
+            display: block;
+        }
+        .second{
+            padding-left: 40px;
+            padding-top: 70px;
+
+        }
+        .vertical{
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            padding: 10px 10px 0px 6px;
+            width: 200px;
+        }
+        .vertical-content{
+            background-color: skyblue;
+        }
+        .ele{
+            width: 100%;
+            height: 24px;
+            padding: 7px 0px 7px 16px ;
+            justify-content: center;
+            font-size: large;
+            color: rgb(17, 0, 255);
+        }
+        .ele:hover{
+            background-color: rgb(255, 153, 0);
+            width: 184px;
+            color: whitesmoke;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        .horizontal{
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            padding: 10px 0px 10px 5px;
+            width: 350px;
+        }
+        .horizontal-content{
+            display: flex;
+            background-color: gainsboro;
+            width: 350px;
+        }
+        .h-ele{
+            width: 100%;
+            height: 18px;
+            padding: 7px 10px 7px 20px ;
+            justify-content: center;
+            font-size: medium;
+            color: rgb(17, 0, 255);
+            border-style: solid;
+            border-width: 0.5px;
+            border-right: 1px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-color: rgb(17, 0, 255);;
+        }
+        .h-ele:hover{
+            background-color: rgb(152, 152, 152);
+            color: whitesmoke;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;align-items: center;justify-content: center;">
+        <div class="first">
+            <div style="padding-left: 20px;display: flex;"><h5>Vertical Navigation Bar</h5></div>
+            <div class="vertical">
+                <div  class="vertical-content">
+                    <div class="ele">Home</div>
+                    <div class="ele">Java</div>
+                    <div class="ele">CSS</div>
+                    <div class="ele">HTML</div>
+                    <div class="ele">Bootstrap</div>
+                </div>
+            </div><br/>
+        </div>
+
+        <div class="second">
+            <div style="padding-left: 20px;padding-left: 70px;"><h5>Horizontal Navigation Bar</h5></div>
+            <div class="horizontal">
+                <div  class="horizontal-content">
+                    <div class="h-ele" id="h-home">Home</div>
+                    <div class="h-ele">Java</div>
+                    <div class="h-ele">HTML</div>
+                    <div class="h-ele">CSS</div>
+                    <div class="h-ele"></div>
+                </div>
+            </div><br/>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-11</title>
+    <style>
+        body{
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .main{
+            width: 600px;
+            height: 600px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .p-img{
+            width: 250px;
+            height: 250px;
+            opacity: 0.85;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(232, 230, 230);
+            border-style: solid;
+            border-color: rgb(122, 121, 121);
+            border-width: 0.5px;
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+        }
+        #cancel{
+            width: 80px;
+            height: 32px;
+            color: whitesmoke;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            margin-top: 12px;
+            margin-left: 5px;
+            opacity: 0.85;
+        }
+        #login{
+            margin-top: 3px;
+            background-color: green;
+            width: 100%;
+            height: 34px;
+            border: none;
+            color: whitesmoke;
+            opacity: 0.85;
+        }
+        label{
+            font-family: sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            padding-left: 3px;
+        }
+        .inp{
+            width: 97%;
+            height: 30px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            font-family: sans-serif;
+            letter-spacing: 0.4px;
+
+        }
+        #cb{
+            margin: 14px 0px 14px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="profile">
+            <img class="p-img" src="https://cdn-icons-png.flaticon.com/512/6833/6833601.png" alt="Female image">
+        </div>
+        <div class="details">
+            <label for="un">Username</label><br>
+            <input class="inp" type="text" placeholder="Enter Username"> <br>
+            <label for="pass">Password</label><br>
+            <input class="inp" type="text" placeholder="Enter Password"><br>
+            <button id="login"><b>Login</b></button><br>
+            <input type="checkbox" name="Remember me" id="cb" checked>Remember me<br>
+            <div class="bottom">
+                <button id="cancel"><b>Cancel</b></button>
+                <p style="margin-right: 5px;margin-top: 18px;">Forgot <u>Password?</u></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

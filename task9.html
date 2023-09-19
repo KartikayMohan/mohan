@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-9</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 0;
+        }
+
+        .main {
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            height: 400px;
+            width: 500px;
+            display: flex;
+        }
+
+        .sidenav {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            align-items: center; /* Center the content vertically */
+        }
+
+        .d1,
+        .d2,
+        .d3,
+        .d4 {
+            width: 35px;
+            height: 35px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: transparent;
+            margin-bottom: 10px;
+            transition: transform 0.1s; /* Add a transition for smooth change */
+        }
+
+        .d1:hover,
+        .d2:hover,
+        .d3:hover,
+        .d4:hover {
+            transform: scale(1.1); /* Scale the individual div on hover */
+        }
+
+        .d1 {
+            background-color: rgb(18, 154, 74);
+        }
+
+        .d2 {
+            background-color: rgb(32, 146, 239);
+        }
+
+        .d3 {
+            background-color: rgb(235, 35, 35);
+        }
+
+        .d4 {
+            background-color: rgb(34, 30, 30);
+        }
+
+        .p-content {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidenav">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+        </div>
+
+        <div class="p-content">
+            <h3><b>Hoverable Sidenav Buttons</b></h3>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+</html>
