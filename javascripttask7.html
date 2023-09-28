@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Animation</title>
+    <style>
+        #image-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        #image {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="image" src="https://clipart-library.com/images/8ixngX54T.png" alt="Image">
+    </div>
+    <button onclick="startAnimation()">Start</button>
+    <button onclick="stopAnimation()">Stop</button>
+
+    <script>
+        var image = document.getElementById("image");
+        var isAnimating = false;
+
+        function startAnimation() {
+            if (!isAnimating) {
+                isAnimating = true;
+                image.style.display = "block";
+                alert("Your animation is running.");
+            }
+        }
+
+        function stopAnimation() {
+            if (isAnimating) {
+                isAnimating = false;
+                image.style.display = "none";
+                alert("Your animation is stopped.");
+            }
+        }
+    </script>
+</body>
+</html>

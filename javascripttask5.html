@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task 5</title>
+    <style>
+        .red{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <p>Name:</p><input type="text" name = "name" id="name" required> <a class = "red"> This field is required. </a>
+
+    <p>Email: </p>
+    <input type="" id="email"> <a class = "red"> A valid email id is required. </a>
+
+    <p>Website: </p>
+    <input type="text" name = "website" id="website"> <a class = "red"> A valid url is required. </a>
+
+    <p>Message: </p>
+    <textarea name="suggestion" id="suggestion" cols="60" rows="10"></textarea> <a class="red"> This field is required. </a>
+
+    <br>
+
+    <input type="submit" value="Display Information">
+    </form>
+</body>
+<script>
+    document.getElementById("userInfoForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var website = document.getElementById("website").value;
+        var suggestion = document.getElementById("suggestion").value;
+
+        var message = "Name: " + name + "\nEmail: " + email + "\nWebsite" + website + "\nsuggestion" + suggestion;
+
+            // Display the information in an alert
+            alert("User Information:\n\n" + message);
+        
+        });
+</script>
+</html>
